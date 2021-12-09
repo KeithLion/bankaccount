@@ -23,5 +23,11 @@ class BankAccount:
             self.account += self.account*0.07
 
 
-account1 = BankAccount(0.07,200)
-account1.deposit(100).deposit(40).withdraw(20).yield_intrest(0.07).display_account()
+account1 = BankAccount(0.07, 200)
+account1.deposit(100).deposit(40).withdraw(
+    20).yield_intrest().display_account()
+
+
+account2 = BankAccount(0.07, 150)
+account2.deposit(30).deposit(80).withdraw(
+    20).withdraw(50).withdraw(25).withdraw(18).yield_intrest().display_account()
